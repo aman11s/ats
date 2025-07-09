@@ -121,7 +121,7 @@ export default {
 				'fade-out': 'fade-out 0.3s ease-out'
 			},
 			fontFamily: {
-				'poppins': ['Poppins', 'sans-serif'],
+				'poppins': ['var(--font-poppins)', 'Arial', 'sans-serif'],
 			},
 		}
 	},
