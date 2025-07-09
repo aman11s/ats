@@ -37,34 +37,35 @@ const TestimonialCard = ({ name, position, testimonial }: TestimonialProps) => {
   );
 };
 
+const testimonials = [
+  {
+    name: "Rajesh Kumar",
+    position: "Homeowner",
+    testimonial: "ATS Packers & Movers made my home shifting experience incredibly smooth. Their team was professional, punctual, and took great care with all my belongings. Highly recommended!"
+  },
+  {
+    name: "Priya Sharma",
+    position: "Business Owner",
+    testimonial: "We hired ATS for our office relocation, and they exceeded our expectations. The move was completed over the weekend with minimal disruption to our business operations."
+  },
+  {
+    name: "Arun Singh",
+    position: "Apartment Resident",
+    testimonial: "Moving from a 3rd floor apartment without an elevator was a challenge, but ATS team handled it brilliantly. Everything arrived intact and on time. Great service!"
+  },
+  {
+    name: "Meera Patel",
+    position: "Homeowner",
+    testimonial: "The packing quality was exceptional. Even my most fragile items were delivered without a scratch. The unpacking service saved me so much time and stress."
+  },
+  {
+    name: "Vikram Mehta",
+    position: "IT Professional",
+    testimonial: "I had to relocate for work on short notice, and ATS accommodated my tight schedule. Their rates were reasonable, and the service was excellent. Would use them again."
+  }
+];
+
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Rajesh Kumar",
-      position: "Homeowner",
-      testimonial: "ATS Packers & Movers made my home shifting experience incredibly smooth. Their team was professional, punctual, and took great care with all my belongings. Highly recommended!"
-    },
-    {
-      name: "Priya Sharma",
-      position: "Business Owner",
-      testimonial: "We hired ATS for our office relocation, and they exceeded our expectations. The move was completed over the weekend with minimal disruption to our business operations."
-    },
-    {
-      name: "Arun Singh",
-      position: "Apartment Resident",
-      testimonial: "Moving from a 3rd floor apartment without an elevator was a challenge, but ATS team handled it brilliantly. Everything arrived intact and on time. Great service!"
-    },
-    {
-      name: "Meera Patel",
-      position: "Homeowner",
-      testimonial: "The packing quality was exceptional. Even my most fragile items were delivered without a scratch. The unpacking service saved me so much time and stress."
-    },
-    {
-      name: "Vikram Mehta",
-      position: "IT Professional",
-      testimonial: "I had to relocate for work on short notice, and ATS accommodated my tight schedule. Their rates were reasonable, and the service was excellent. Would use them again."
-    }
-  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleTestimonials, setVisibleTestimonials] = useState<TestimonialProps[]>([]);
@@ -91,7 +92,7 @@ const Testimonials = () => {
         currentIndex + testimonialsToShow
       )
     );
-  }, [currentIndex, isMobile, testimonials]);
+  }, [currentIndex, isMobile]);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
@@ -111,7 +112,7 @@ const Testimonials = () => {
       <div className="container mx-auto">
         <h2 className="section-title text-center">Happy <span className="text-ats-orange">Clients</span></h2>
         <p className="section-subtitle text-center">
-          Don't just take our word for it. Here's what our customers have to say about our services.
+          Don&apos;t just take our word for it. Here&apos;s what our customers have to say about our services.
         </p>
 
         <div className="mt-12">
