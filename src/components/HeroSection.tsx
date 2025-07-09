@@ -1,12 +1,11 @@
 
-import { Button } from '@/components/ui/button';
 import MovingTruckIllustration from './illustrations/MovingTruckIllustration';
 
 const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="pt-28 pb-16 md:pt-40 md:pb-24 px-4 bg-gradient-to-b from-white to-ats-beige"
+      className="pt-28 pb-16 md:pt-36 md:pb-24 px-4 bg-gradient-to-b from-white to-ats-beige"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
@@ -19,9 +18,6 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="#contact" className="btn-primary text-center">Get a Free Quote</a>
-              <Button variant="outline" className="border-ats-orange text-ats-orange hover:bg-ats-orange hover:text-white">
-                Learn More
-              </Button>
             </div>
           </div>
         </div>
